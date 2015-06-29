@@ -16,6 +16,7 @@ gulp
 ###学习资料
 官方指南：[https://facebook.github.io/react/docs/getting-started.html](https://facebook.github.io/react/docs/getting-started.html)  
 中文文档：[http://reactjs.cn/react/docs/getting-started.html](http://reactjs.cn/react/docs/getting-started.html)  
+FLUX：[https://facebook.github.io/flux/docs/overview.html#content](https://facebook.github.io/flux/docs/overview.html#content)  
 React 入门教程：[http://hulufei.gitbooks.io/react-tutorial/content/index.html](http://hulufei.gitbooks.io/react-tutorial/content/index.html)  
 中文社区：[http://react-china.org/](http://react-china.org/)  
 ###参考文章：
