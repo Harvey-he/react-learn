@@ -19,6 +19,8 @@ gulp
 FLUX：[https://facebook.github.io/flux/docs/overview.html#content](https://facebook.github.io/flux/docs/overview.html#content)  
 React 入门教程：[http://hulufei.gitbooks.io/react-tutorial/content/index.html](http://hulufei.gitbooks.io/react-tutorial/content/index.html)  
 中文社区：[http://react-china.org/](http://react-china.org/)  
+react-native：[https://facebook.github.io/react-native/docs/getting-started.html#content](https://facebook.github.io/react-native/docs/getting-started.html#content)  
+
 ###参考文章：
 [InfoQ：颠覆式前端UI开发框架：React](http://www.infoq.com/cn/articles/subversion-front-end-ui-development-framework-react#anch117429)
 [阮一峰：React 入门实例教程](http://www.ruanyifeng.com/blog/2015/03/react.html)
