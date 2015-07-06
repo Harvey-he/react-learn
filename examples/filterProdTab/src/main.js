@@ -29,7 +29,7 @@ var ProductCategoryRow = React.createClass({
   render: function() {
     return (
       <tr>
-        <th colspan="2">
+        <th colSpan="2">
           {this.props.category}
         </th>
       </tr>
@@ -43,7 +43,7 @@ var ProductRow = React.createClass({
   render: function() {
     var name = this.props.product.stocked ?
                this.props.product.name :
-               <span style="{{color:red}}">
+               <span style={{color:'red'}}>
                 {this.props.product.name}
                </span>;
     return (
@@ -67,9 +67,9 @@ var ProductTable = React.createClass({
     var lastCategory = null;
     this.props.products.forEach(function(product){
       if(product.category !== lastCategory) {
-        rows.push(<ProductCategoryRow  category='product.category' key='product.category'/>);
+        rows.push(<ProductCategoryRow  category={product.category} key={product.category}/>);
       }
-      rows.push(<ProductRow category='product.category'  key='product.name'/>);
+      rows.push(<ProductRow product={product}  key={product.name}/>);
       lastCategory = product.category;
     });
     return (
@@ -100,4 +100,4 @@ var FilterableProductTable = React.createClass({
   }
 });
 
-React.render(< FilterableProductTable products={PRODUCTS}/>, document.body);
+React.render(< FilterableProductTable products={PRODUCTS} />, document.getElementById('container'));

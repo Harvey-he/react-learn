@@ -43,7 +43,7 @@ var ProductRow = React.createClass({displayName: "ProductRow",
   render: function() {
     var name = this.props.product.stocked ?
                this.props.product.name :
-               React.createElement("span", {style: {color:'red'}}, 
+               React.createElement("span", null, 
                 this.props.product.name
                );
     return (
@@ -67,9 +67,9 @@ var ProductTable = React.createClass({displayName: "ProductTable",
     var lastCategory = null;
     this.props.products.forEach(function(product){
       if(product.category !== lastCategory) {
-        rows.push(React.createElement(ProductCategoryRow, {category: product.category, key: product.category}));
+        rows.push(React.createElement(ProductCategoryRow, {category: "{product.category}", key: "{product.category}"}));
       }
-      rows.push(React.createElement(ProductRow, {product: product, key: product.name}));
+      rows.push(React.createElement(ProductRow, {product: "{product}", key: "{product.name}"}));
       lastCategory = product.category;
     });
     return (

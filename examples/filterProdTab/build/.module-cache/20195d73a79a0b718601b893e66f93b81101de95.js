@@ -43,7 +43,7 @@ var ProductRow = React.createClass({displayName: "ProductRow",
   render: function() {
     var name = this.props.product.stocked ?
                this.props.product.name :
-               React.createElement("span", {style: {color:'red'}}, 
+               React.createElement("span", {style: {color:red}}, 
                 this.props.product.name
                );
     return (
