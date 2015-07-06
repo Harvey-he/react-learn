@@ -21,14 +21,14 @@ var SearchBar = React.createClass({displayName: "SearchBar",
           type: "text", 
           placeholder: "seraching...", 
           value: this.props.filterText, 
-          ref: "filterTextInput", 
+          rel: "filterTextInput", 
           onChange: this.handleChange}
         ), 
         React.createElement("p", null, 
           React.createElement("input", {
             type: "checkbox", 
             checked: this.props.inStockOnly, 
-            ref: "inStockOnlyInput", 
+            rel: "inStockOnlyInput", 
             onChange: this.handleChange}
           ), 
           ' ', 
@@ -116,20 +116,15 @@ var FilterableProductTable = React.createClass({displayName: "FilterableProductT
       inStockOnly: false
     };
   },
-  handleUserInput: function(filterText,inStockOnly) {
-    this.setState({
-      filterText: filterText,
-      inStockOnly: inStockOnly
-    })
+  handleUserInput: function() {
+    
   },
   render: function() {
     return (
       React.createElement("div", null, 
         React.createElement(SearchBar, {
           filterText: this.state.filterText, 
-          inStockOnly: this.state.inStockOnly, 
-          onUserInput: this.handleUserInput}
-        ), 
+          inStockOnly: this.state.inStockOnly}), 
         React.createElement(ProductTable, {
           products: this.props.products, 
           filterText: this.state.filterText, 

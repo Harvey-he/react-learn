@@ -21,14 +21,14 @@ var SearchBar = React.createClass({displayName: "SearchBar",
           type: "text", 
           placeholder: "seraching...", 
           value: this.props.filterText, 
-          ref: "filterTextInput", 
+          rel: "filterTextInput", 
           onChange: this.handleChange}
         ), 
         React.createElement("p", null, 
           React.createElement("input", {
             type: "checkbox", 
             checked: this.props.inStockOnly, 
-            ref: "inStockOnlyInput", 
+            rel: "inStockOnlyInput", 
             onChange: this.handleChange}
           ), 
           ' ', 
