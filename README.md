@@ -24,4 +24,5 @@ react-native中文文档：[http://wiki.jikexueyuan.com/project/react-native/](h
 
 ### 参考文章：
 [InfoQ：颠覆式前端UI开发框架：React](http://www.infoq.com/cn/articles/subversion-front-end-ui-development-framework-react#anch117429)
+
 [阮一峰：React 入门实例教程](http://www.ruanyifeng.com/blog/2015/03/react.html)
